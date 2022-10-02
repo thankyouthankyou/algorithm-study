@@ -53,7 +53,7 @@
 *  해시테이블(Hash Table)
 
 ### 자료구조2
-*  트리(Tree)
+*  [[issues#1]](https://github.com/Green-Record/algorithm-study/issues/1)트리(Tree)
 *  이진 탐색 트리(Binary Search Tree)
 *  그래프(Graph)
 *  힙(Heap)
