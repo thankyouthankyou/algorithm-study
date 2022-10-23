@@ -1,0 +1,18 @@
+N = int(input())
+road = list(map(int, input().split())) #[2, 3, 1]
+city = list(map(int, input().split())) 
+del city[-1] #[5 2 4]
+
+order = city.copy() #복사. order = city하면 같은 메모리 참조해서, 같이수정됨
+order.sort() #[2, 4, 5]
+
+answer=0
+
+for i in range(len(order)):
+    a = city.index(order[i])
+    answer += sum(road[a:])*order[i]
+    del road[a:]
+    if len(road) == 0:
+        break
+
+print(answer)
