@@ -1,0 +1,24 @@
+cal = str(input())
+
+# for i in range(len(cal)):
+#   if cal[i] == "-":
+#     word = cal[i+1:].replace('+', '-')
+#     cal = cal[:i+1] + word
+#     numL = cal.split('-')
+#     print('리스트', numL)
+#     break
+# print(eval(cal))
+
+num = cal.replace('+','-').split('-')
+for i in num:
+  num[i].rstrip('0')
+print(num)
+minus = -1
+for i in cal:
+  if i == "+":
+    minus += 0
+  if i=='-':
+    minus += 0
+    break
+print(minus)
+# .lstrip("0")
