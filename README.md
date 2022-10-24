@@ -20,11 +20,19 @@
 
 
 ---
-### 수학1-1(나머지, 최대공약수, 최소공배수, GCD의 합, 진법)
+### [[issues#5]](https://github.com/Green-Record/algorithm-study/issues/5)수학1-1(나머지, 최대공약수, 최소공배수, GCD의 합, 진법)
 *  최대공약수(GCD)를 구하는 방법 '유클리드 호제법'의 개념
 *  최대공약수를 이용하여 최소공배수(LCM)를 구하는 방법
 *  기본적인 아스키코드
 *  10진수 <-> 2진수, 8진수, 16진수 변환 시 Integer API 사용
+
+### [[issues#11]](https://github.com/Green-Record/algorithm-study/issues/11)순열, 조합
+*  순열, 조합의 개념
+*  순열, 조합 출력
+*  순열, 조합 경우의수
+
+### [[issues#11]](https://github.com/Green-Record/algorithm-study/issues/11)그리디
+*  그리디의 개념
 
 ### 수학1-2(소수, 소인수분해, 팩토리얼)
 *  1~N 까지의 수에서 모든 소수를 구하는 방법 '에라토스테네스의 체'의 개념
