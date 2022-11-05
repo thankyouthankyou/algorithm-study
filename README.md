@@ -1,6 +1,9 @@
 # algorithm-study
 * 스터디 일시 : 매주 화요일 19시, 일요일 14시
 
+# 아래 링크에 있는 레포지토리에 있는 커리큘럼을 따른다.
+[WeareSoft - algorithm-study](https://github.com/WeareSoft/algorithm-study)
+
 
 ## Study Rule
 * Github를 통한 코드 공유 및 피드백
