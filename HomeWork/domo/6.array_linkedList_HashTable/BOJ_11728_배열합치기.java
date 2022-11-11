@@ -1,12 +1,10 @@
-[BOJ 11728번 배열 합치기](https://www.acmicpc.net/problem/11728)
-```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class BOJ_11728_배열합치기{
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
@@ -29,9 +27,8 @@ public class Main {
         Arrays.sort(arr);
 
         for (int i = 0; i < arr.length; i++) {
-           sb.append(arr[i] + " ");
+            sb.append(arr[i] + " ");
         }
         System.out.println(sb);
     }
 }
-```

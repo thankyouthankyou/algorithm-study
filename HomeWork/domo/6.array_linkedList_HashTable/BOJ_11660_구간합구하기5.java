@@ -1,11 +1,9 @@
-[BOJ 11660번 구간합구하기5](https://www.acmicpc.net/problem/11660)
-```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class BOJ_11660_구간합구하기5 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
@@ -38,5 +36,3 @@ public class Main {
         System.out.println(sb);
     }
 }
-
-```
