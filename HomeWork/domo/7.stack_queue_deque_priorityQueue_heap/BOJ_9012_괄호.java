@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Stack;
 
-public class Main {
+public class BOJ_9012_괄호 {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

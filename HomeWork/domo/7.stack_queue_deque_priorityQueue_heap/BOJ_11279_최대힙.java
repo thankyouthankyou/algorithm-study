@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class Main {
+public class BOJ_11279_최대힙 {
     public static void main(String[] args) throws IOException {
         PriorityQueue pq = new PriorityQueue(Collections.reverseOrder());
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

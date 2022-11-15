@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.PriorityQueue;
 
-public class Main {
+public class BOJ_1927_최소힙 {
     public static void main(String[] args) throws IOException {
         PriorityQueue pq = new PriorityQueue();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
