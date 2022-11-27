@@ -12,7 +12,6 @@ while start <= end :
             sumV += li[i]
         else:
             cnt += 1
-            print(sumV+li[i],mid,cnt,m)
             sumV = li[i]
         if cnt > m:
             break
@@ -20,8 +19,5 @@ while start <= end :
         start = mid+1
     else:
         end = mid-1
-        if cnt==m:
-            res=min(res,mid)
+        res=min(res,mid)
 print(res)
-#9 4
-#9 9 9 9 9 9 9 9 9
