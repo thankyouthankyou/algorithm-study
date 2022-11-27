@@ -1,0 +1,29 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+string solution(vector<int> numbers) {
+    string answer = "";
+    
+    auto _comp = [](auto a, auto b)
+    {
+        auto str_a = to_string(a);
+        auto str_b = to_string(b);
+        return str_a + str_b > str_b + str_a;
+    };
+    sort(numbers.begin(), numbers.end(), _comp);
+    int sum;
+    for(auto& a : numbers)
+    {
+        answer += to_string(a);
+        sum += a;
+    }
+    if(sum == 0)
+        answer = "0";
+    
+    return answer;
+}
+
+//// 모든 케이스를 다 통과하지는 못함
