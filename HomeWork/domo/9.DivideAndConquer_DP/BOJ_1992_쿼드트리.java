@@ -6,7 +6,6 @@ import java.util.StringTokenizer;
 public class BOJ_1992_쿼드트리 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		int N = Integer.parseInt(br.readLine());
 		int[][] arr = new int[N][N];
 
