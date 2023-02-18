@@ -1,0 +1,84 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int A, B;
+    int what;
+    cin >> A >> B;
+    int num1[5] = { 0, };// = A;
+    int num2[5] = { 0, };// = B;
+    int a[4];
+    int Result[4] = { 0, };
+    int x, y = 0;
+
+
+    // 숫자 나눠 담기
+    for (int i = 2; i >= 0; i--)
+    {
+        x = (int)(A / (int)pow(10, i));
+        num1[2-i] = x;
+        A -= (x * (int)pow(10, i));
+        y = (int)(B / (int)pow(10, i));
+        num2[2-i] = y;
+        B -= (y * (int)pow(10, i));
+    }
+    int hue = 0, b = 0;
+
+    //중간 결과 곱하기, 곱한 수 10 넘으면 한자릿수 올리기
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            hue = num2[i] * num1[j] + a[i];
+            if (hue >= 10)
+            {
+                if (j == 2)
+                {
+                    Result[i] += hue * (int)pow(10, j);
+                    break;
+                }
+                a[i] = (int)hue / 10;
+                num1[j + 1] += a[i];
+                b = hue % 10;
+                Result[i] += (b)* ((int)pow(10, j));
+            }
+            else {
+                Result[i] += hue * (int)pow(10, j);
+            }
+
+        }
+    }
+
+    int cha = -1;
+    for (int j = 0; j < 3; j++)
+    {
+        what = 0;
+        while (0 != ((int)Result[j] / (int)pow(10, what)))
+        {
+            what++;
+            if (cha <= what)
+            {
+                cha = what;
+                break;
+            }
+        }
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < cha; j++)
+        {
+            Result[3] += Result[i] * (int)pow(10, j);
+        }
+
+    }
+    //Result[3] = Result[0] + Result[1] + Result[2];
+    for (int i = 0; i < 4; i++)
+    {
+        cout << Result[i] << endl;
+    }
+
+    return 1;
+}
